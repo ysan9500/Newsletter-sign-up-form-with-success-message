@@ -15,35 +15,47 @@
   </style>
 </head>
 <body>
-  <div class="signupform">
-    <h1>Stay updated!</h1>
-    
+  <div id="signupform">
+    <div id="textform">
+      <h1>Stay updated!</h1>
+      
+      <p>
+        Join 60,000+ product managers receiving monthly updates on:<br>
+
+        <img class="checkbullet" alt="checkbullet">
+        Product discovery and building what matters<br>
+        <img class="checkbullet" alt="checkbullet">
+        Measuring to ensure updates are a success<br>
+        <img class="checkbullet" alt="checkbullet">
+        And much more!
+      </p>
+
+      <form>
+        <label for="email">Email address</label><br>
+        <input type="text" id="email" name="email" value="email@company.com"><br><br>
+        <input type="button" value="Subscribe to monthly newsletter" onclick="handleSubmit(); openSuccess();">
+      </form>
+    </div> 
+
+    <img id="illustration" alt="illustration">
+
+  </div>
+
+  <div id="successmsg">
+    <img src="./assets/images/icon-success.svg">
+    <h1>Thanks for subscribing!</h1>
     <p>
-      Join 60,000+ product managers receiving monthly updates on:<br>
-
-      <img class="checkbullet" alt="checkbullet">
-      Product discovery and building what matters<br>
-      <img class="checkbullet" alt="checkbullet">
-      Measuring to ensure updates are a success<br>
-      <img class="checkbullet" alt="checkbullet">
-      And much more!
+      A confirmation email has been sent to <strong id="useremail">ash@loremcompany.com</strong>. 
+      Please open it and click the button inside to confirm your subscription.
     </p>
-
-    <form >
-      <label for="email">Email address</label><br>
-      <input type="text" id="email" name="email" value="email@company.com"><br><br>
-      <input type="button" value="Subscribe to monthly newsletter" onclick="handleSubmit()">
-    </form>
-  </div>
-
-  <img id="illustration" alt="illustration">
-
-
+    
+    <input type="button" value="Dismiss message" onclick="dismiss()">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
+
+
 
   <script src="./script.js"></script>
 </body>

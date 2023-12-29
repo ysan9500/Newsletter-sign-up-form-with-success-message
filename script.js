@@ -5,3 +5,14 @@ function handleSubmit() {
     
   document.getElementById('useremail').innerHTML = email;
 }
+
+function openSuccess() {
+  //open up success message
+  
+}
+
+function dismiss() {
+  //revert to previous page
+  
+
+}
