@@ -1,1 +1,11 @@
-/*# sourceMappingURL=style.css.map */
+.signupform {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0;
+  margin: auto;
+}
+
+.textform {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=style.css.map */
