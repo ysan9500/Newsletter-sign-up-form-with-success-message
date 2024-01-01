@@ -1,11 +1,48 @@
-.signupform {
+@font-face {
+  font-family: "robotobold";
+  src: url("../assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+#signupform {
   display: flex;
   flex-direction: column-reverse;
+  width: 360px;
   padding: 0;
   margin: auto;
 }
 
-.textform {
+#textform {
   display: flex;
   flex-direction: column;
+  margin: 10px;
+  padding: 0%;
+}
+#textform h1, #textform form label {
+  font-family: "robotobold";
+}
+#textform p {
+  font-family: "roboto";
+  font-size: 16px;
+}
+
+.button {
+  font-family: "robotobold";
+  font-size: 16px;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  border-style: none;
+  border-radius: 10%;
+  padding: 5%;
+  margin: 0%;
+  width: 100%;
+}
+.button:hover {
+  background-color: hsl(235, 18%, 26%);
+}
+
+#successmsg {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
