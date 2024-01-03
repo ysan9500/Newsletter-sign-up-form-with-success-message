@@ -17,15 +17,30 @@
 #textform {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 24px;
   padding: 0%;
+  line-height: 1.5;
 }
-#textform h1, #textform form label {
+#textform h1 {
   font-family: "robotobold";
+  font-size: 38px;
+  line-height: 0;
+}
+#textform form label {
+  font-family: "robotobold";
+  font-size: 12px;
 }
 #textform p {
+  display: flex;
+  flex-direction: row;
   font-family: "roboto";
   font-size: 16px;
+  flex-wrap: wrap;
+}
+#textform p .checkbullet {
+  margin-right: 16px;
+  align-self: baseline;
+  width: 20px;
 }
 
 .button {
