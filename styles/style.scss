@@ -8,7 +8,7 @@
     src: url('../assets/fonts/Roboto-Regular.ttf');
 }
 
-#signupform {
+main {
     display: flex;
     flex-direction: column-reverse;
     width: 360px;
@@ -24,34 +24,40 @@
     line-height: 1.5;
 
     h1 {
+        margin: 0%;
         font-family: 'robotobold';
         font-size: 38px;
-        line-height: 0;
     }
 
-    form label {
+    label {
         font-family: 'robotobold';
         font-size: 12px;
     }
 
     p {
-        display: flex;
-        flex-direction: row;
         font-family: 'roboto';
         font-size: 16px;
-        flex-wrap: wrap;
+    }
 
-        .checkbullet {
-            margin-right: 16px;
-            align-self: baseline;
-            width: 20px;
-        }
+    ul {
+        padding: 0%;
+        padding-left: 8.5%;
+        margin: 0%;
+        font-family: 'roboto';
+        font-size: 16px;
+    }
+
+    
+
+    li::marker {
+        font-size: 16px;
+        content: url('../assets/images/icon-list.svg') "    ";
     }
 }
 
 .button {
     font-family: 'robotobold';
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     background-color: hsl(234, 29%, 20%);
     border-style: none;

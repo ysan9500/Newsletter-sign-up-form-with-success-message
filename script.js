@@ -1,6 +1,3 @@
-document.querySelectorAll('.checkbullet').forEach(img => img.src = './assets/images/icon-list.svg');
-document.getElementById('illustration').src = './assets/images/illustration-sign-up-mobile.svg';
-
 function handleSubmit() {
   //validate the message and then submit
   let email = getElementById('email').value;
